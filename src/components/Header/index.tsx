@@ -1,10 +1,10 @@
 import React from "react";
-import { Link } from "gatsby";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import navLinks from "./content";
 
 const Header = () => {
   return (
-    <div className="flex justify-between pt-10 px-20">
+    <div className="sticky top-0 bg-white z-50 flex justify-between pt-10 pb-5 px-20">
       <div className="flex-1">
         <h1 className="text-2xl font-bold">Lucas.</h1>
       </div>
@@ -12,7 +12,9 @@ const Header = () => {
         <ul className="flex justify-around">
           {navLinks.map(link => (
             <li key={link.label}>
-              <Link to="/">{link.label}</Link>
+              <AnchorLink className="hover:opacity-75" to={link.anchor}>
+                {link.label}
+              </AnchorLink>
             </li>
           ))}
         </ul>

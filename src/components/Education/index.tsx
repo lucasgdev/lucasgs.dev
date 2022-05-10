@@ -3,7 +3,7 @@ import { educationData } from "./content";
 
 const Education = () => {
   return (
-    <section className="py-10 px-20 md:flex bg-green-light">
+    <section className="py-10 px-20 md:flex bg-green-light" id="education">
       <h1 className="text-3xl font-bold mr-10">
         Education<span className="text-green">.</span>
       </h1>

@@ -3,7 +3,7 @@ import Avatar from "../Avatar";
 
 const About = () => {
   return (
-    <section className="md:flex pt-28 pb-20 px-20">
+    <section className="md:flex pt-20 pb-20 px-20 items-center" id="hello">
       <div className="mr-28 flex-1">
         <h1 className="text-3xl font-bold mb-10">
           I am Lucas G. Santos <span className="text-green">.</span>
@@ -53,19 +53,18 @@ const About = () => {
           </p>
           <h3 className="font-medium">Sneakers 👟 </h3>
           <p className="mb-1">
-            I'm a sneaker fan since I was a kid, this came from my court days
+            I&apos;m a sneaker fan since I was a kid, this came from my court
+            days
           </p>
           <h3 className="font-medium">Camping / Trekking 🏕️ </h3>
           <p className="mb-1">
             This is an activity I learned with my parents, and I love it!
           </p>
           <h3 className="font-medium">Video-games 🎮</h3>
-          <p>I'm a Nintendo Switch player :D</p>
+          <p>I&apos;m a Nintendo Switch player :D</p>
         </div>
       </div>
-      <div>
-        <Avatar />
-      </div>
+      <Avatar />
     </section>
   );
 };
