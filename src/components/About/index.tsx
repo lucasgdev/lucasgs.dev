@@ -3,7 +3,7 @@ import Avatar from "../Avatar";
 
 const About = () => {
   return (
-    <section className="md:flex mt-28">
+    <section className="md:flex pt-28 pb-20 px-20">
       <div className="mr-28 flex-1">
         <h1 className="text-3xl font-bold mb-10">
           I am Lucas G. Santos <span className="text-green">.</span>

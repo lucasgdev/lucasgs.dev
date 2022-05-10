@@ -4,7 +4,7 @@ import Header from "./Header";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="px-20 py-10">
+    <div>
       <Header />
       <div>{children}</div>
     </div>
