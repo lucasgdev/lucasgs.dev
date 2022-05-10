@@ -9,7 +9,7 @@ const navLinks = [
     label: "Experience",
   },
   {
-    label: "Contact",
+    label: "Education",
   },
 ];
 

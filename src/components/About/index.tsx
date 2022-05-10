@@ -15,7 +15,7 @@ const About = () => {
           For the past years I&apos;ve been focusing especially on front-end
           performance and usability in the web.
         </p>
-        <ul>
+        <ul className="mb-5">
           <li className="font-bold text-gray">
             Phone{" "}
             <span className="ml-5 text-gray-dark">
@@ -44,6 +44,24 @@ const About = () => {
             </a>
           </li>
         </ul>
+        <div>
+          <h2 className="font-bold text-green text-lg">My other interests</h2>
+          <h3 className="font-medium">Basketball 🏀 </h3>
+          <p className="mb-1">
+            I really like any kind of sport, and I am lover and player of
+            basketball in free time
+          </p>
+          <h3 className="font-medium">Sneakers 👟 </h3>
+          <p className="mb-1">
+            I'm a sneaker fan since I was a kid, this came from my court days
+          </p>
+          <h3 className="font-medium">Camping / Trekking 🏕️ </h3>
+          <p className="mb-1">
+            This is an activity I learned with my parents, and I love it!
+          </p>
+          <h3 className="font-medium">Video-games 🎮</h3>
+          <p>I'm a Nintendo Switch player :D</p>
+        </div>
       </div>
       <div>
         <Avatar />
