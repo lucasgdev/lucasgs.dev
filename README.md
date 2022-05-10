@@ -1,4 +1,8 @@
 # lucasgs.dev personal website
+
+- Gatsby
+- Typescript
+- Tailwind.css
 ## Commands
 
 - npm install
