@@ -1,14 +1,4 @@
-## Gatsby v4 Boilerplate
-
-- Gatsby
-- Typescript
-- Eslint
-- Prettier
-- Styled-components
-- Styled-icons
-- Styled-media-queries
-- Markdown support
-
+## lucasgs.dev personal website
 ## Commands
 
 - npm install
