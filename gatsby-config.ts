@@ -2,10 +2,10 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Gatsby v4 Boilerplate`,
-    description: `A Gatsby v4 Boilerplate`,
+    title: `Lucas Germano - @Frontend Specialist`,
+    description: `Lucas' Germano Frontend Specialist personal site.`,
     author: `@lucasgdev`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://www.lucasgs.dev`,
   },
   plugins: [
     "gatsby-plugin-styled-components",
@@ -16,7 +16,7 @@ const config: GatsbyConfig = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "src/images/favicon.png",
       },
     },
     "gatsby-transformer-remark",

@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-v4-boilerplate",
+  "name": "lucasgs.dev",
   "version": "1.0.0",
   "private": true,
-  "description": "gatsby-v4-boilerplate",
+  "description": "Lucas' Germano personal website.",
   "author": "Lucas Germano",
   "keywords": [
     "gatsby"
