@@ -1,15 +1,13 @@
 import * as React from "react";
-import styled from "styled-components";
 
-const MainWrapper = styled.main`
-  display: flex;
-`;
+import Header from "./Header";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <>
-      <MainWrapper>{children}</MainWrapper>
-    </>
+    <div className="px-20 py-10">
+      <Header />
+      <div>{children}</div>
+    </div>
   );
 };
 

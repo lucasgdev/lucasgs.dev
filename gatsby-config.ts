@@ -9,6 +9,7 @@ const config: GatsbyConfig = {
   },
   plugins: [
     "gatsby-plugin-styled-components",
+    "gatsby-plugin-postcss",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
@@ -33,6 +34,13 @@ const config: GatsbyConfig = {
       options: {
         name: "pages",
         path: "./src/pages/",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`red hat display\:400,400i,500,500i,700,700i`],
+        display: "swap",
       },
     },
     `gatsby-plugin-typescript`,
