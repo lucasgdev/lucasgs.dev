@@ -4,7 +4,11 @@ Provided by Netlify: [![Netlify Status](https://api.netlify.com/api/v1/badges/c4
 
 - Gatsby
 - Typescript
+- Eslint
+- Prettier
+- Styled-icons
 - Tailwind.css
+
 ## Commands
 
 - npm install
@@ -12,5 +16,5 @@ Provided by Netlify: [![Netlify Status](https://api.netlify.com/api/v1/badges/c4
 
 ### TODO:
 
-[] - Adjust responsive
-[] - Remove garbage
+- [] - Adjust responsive
+- [] - Remove garbage
