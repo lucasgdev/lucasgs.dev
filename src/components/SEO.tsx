@@ -29,7 +29,7 @@ function SEO({ description = "", lang = "en", meta = [] }: PropTypes) {
 
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
-  const ogImage = `${url}${"/assets/img/profile-photo.png"}`;
+  const ogImage = `${url}${"/img/profile-photo.png"}`;
 
   return (
     <Helmet
