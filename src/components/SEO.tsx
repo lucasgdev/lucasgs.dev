@@ -7,10 +7,9 @@ type PropTypes = {
   description?: string;
   lang?: string;
   meta?: [];
-  title: string;
 };
 
-function SEO({ description = "", lang = "en", meta = [], title }: PropTypes) {
+function SEO({ description = "", lang = "en", meta = [] }: PropTypes) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,30 +18,37 @@ function SEO({ description = "", lang = "en", meta = [], title }: PropTypes) {
             title
             description
             author
+            siteUrl
           }
         }
       }
     `
   );
 
+  const url = site.siteMetadata.siteUrl;
+
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
+  const ogImage = `${url}${"/assets/img/profile-photo.png"}`;
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={defaultTitle ? `%s / ${defaultTitle}` : ""}
+      title={defaultTitle}
       meta={[
         {
           name: `description`,
           content: metaDescription,
         },
         {
+          property: `og:image`,
+          content: ogImage,
+        },
+        {
           property: `og:title`,
-          content: title,
+          content: defaultTitle,
         },
         {
           property: `og:description`,
@@ -57,12 +63,16 @@ function SEO({ description = "", lang = "en", meta = [], title }: PropTypes) {
           content: `summary`,
         },
         {
+          name: `twitter:image:src`,
+          content: ogImage,
+        },
+        {
           name: `twitter:creator`,
           content: site.siteMetadata?.author || ``,
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: defaultTitle,
         },
         {
           name: `twitter:description`,

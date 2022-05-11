@@ -2,8 +2,8 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Lucas Germano - @Frontend Specialist`,
-    description: `Lucas' Germano Frontend Specialist personal site.`,
+    title: `Lucas G. Santos - @Frontend Specialist`,
+    description: `Lucas G. Santos Frontend Specialist personal site.`,
     author: `@lucasgdev`,
     siteUrl: `https://www.lucasgs.dev`,
   },
@@ -22,6 +22,12 @@ const config: GatsbyConfig = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
+        name: `Lucas G. Santos - @Frontend Specialist`,
+        short_name: `Lucas G. - @Frontend Specialist`,
+        start_url: `/`,
+        background_color: `#16202c`,
+        theme_color: `#16202c`,
+        display: `minimal-ui`,
         icon: "src/images/favicon.png",
       },
     },
