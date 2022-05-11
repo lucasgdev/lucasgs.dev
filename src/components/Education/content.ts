@@ -1,6 +1,6 @@
 const educationData = [
   {
-    institution: "Computer Science @UOP - University ofPeople / California",
+    institution: "Computer Science @UOP - University of People / California",
     url: "",
     period: "2019 - ",
     description: "Associates degree",
